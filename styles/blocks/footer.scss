@@ -1,0 +1,98 @@
+.footer__top {
+  width: 100%;
+  position: relative;
+}
+
+.footer__container-top {
+  background: url('../images/Layer.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 47px;
+  padding-bottom: 80px;
+}
+
+.footer__info {
+  width: 373px;
+  padding: 7px;
+  background: $white;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    width: 10px;
+    height: 78px;
+    background: linear-gradient(to right, #abbbbd 0%, #c4d4d6 100%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 50px;
+    width: 10px;
+    height: 78px;
+    background: linear-gradient(to right, #abbbbd 0%, #c4d4d6 100%);
+  }
+}
+
+.footer__info-in {
+  border: 5px solid #d3eff2;
+  padding: 20px 0 24px 33px;
+  color: $black;
+  text-align: left;
+}
+
+.footer__info-title {
+  font-size: 20px;
+}
+
+.footer__info-subtitle {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+
+  & b {
+    color: #1bbbd9;
+    font-size: 20px;
+    @include intro($style:bold);
+
+  }
+}
+
+.footer__bottom {
+  width: 100%;
+  background:  linear-gradient(to right, #e23760 0%, #f85980 100%);
+}
+
+.footer__container-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+  padding-bottom: 40px;
+  font-size: 13px;
+}
+
+.footer__rules {
+  font-size: 10px;
+  padding-left: 17px;
+}
+
+.footer__rules-link {
+  font-size: 12px;
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__text{
+  font-size: 18px;
+  margin-left: -16px;
+}

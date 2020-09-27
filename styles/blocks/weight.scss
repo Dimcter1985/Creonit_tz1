@@ -1,0 +1,30 @@
+.weight__container {
+  padding-top: 18px;
+}
+
+.weight__title {
+  color: $black;
+  text-align: center;
+  font-weight: 500;
+  font-size: 34px;
+  font-family: 'Intro Regular Alt', Arial, sans-serif;
+}
+
+.weight__subtitle {
+  display: block;
+  font-size: 22px;
+  font-weight: 100;
+  color: $black;
+  text-align: center;
+  margin-bottom: 36px;
+  font-family: 'IntroLight', Arial, sans-serif;
+}
+
+.weight__form {
+  background: linear-gradient(to top, #21d0e2, #1bbad8);
+  border-radius: 3px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+

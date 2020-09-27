@@ -1,0 +1,134 @@
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-left: 70px;
+  padding-top: 14px;
+
+  &:nth-child(4) {
+    transform: translateX(-17px);
+  }
+
+  &:nth-child(3) {
+    transform: translateX(-20px);
+  }
+
+  &:nth-child(2) {
+    transform: translateX(-7px);
+  }
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+    background: -moz-linear-gradient( 90deg, rgb(221,221,221) 0%, rgb(235,235,235) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(221,221,221) 0%, rgb(235,235,235) 100%);
+    background: -ms-linear-gradient( 90deg, rgb(221,221,221) 0%, rgb(235,235,235) 100%);
+    opacity: 0.6;
+    position: absolute;
+    top: 58px;
+    width: 50px;
+    height: 10px;
+    transition: all 0.2s ease;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  }
+
+  &:hover {
+
+    .nav__text {
+      color: #e34168;
+    }
+
+    &::before {
+      width: 41px;
+      height: 8px;
+    }
+
+    .nav__ico {
+      background: -moz-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+      background: -webkit-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+      background: -ms-linear-gradient( 60deg, rgb(226,56,97) 0%, rgb(246,86,125) 100%);
+      transform: translateY(-20px);
+    }
+  }
+}
+
+.nav__ico {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(27,187,216,1) 0%, rgba(33,208,226,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+  transition: all 0.3s cubic-bezier(0.68, -0.85, 0.265, 1.55);
+
+  &--dumbell {
+
+    &::after {
+      content: '';
+      width: 46px;
+      height: 26px;
+      background: url('../images/icons/spritesheet.png') -57px -47px;
+    }
+  }
+
+  &--card {
+
+    &::after {
+      content: '';
+    
+      width: 42px;
+      height: 33px;
+      background: url('../images/icons/spritesheet.png') -5px -47px;
+    }
+  }
+
+  &--life {
+
+    &::after {
+      content: '';
+      width: 36px;
+      height: 31px;
+      background: url('../images/icons/spritesheet.png') -121px -5px;
+    }
+  }
+
+  &--team {
+
+    &::after {
+      content: '';
+      width: 40px;
+      height: 32px;
+      background: url('../images/icons/spritesheet.png') -127px -85px;
+    }
+  }
+
+  &--contact {
+
+    &::after {
+      content: '';
+      width: 39px;
+      height: 30px;
+      background: url('../images/icons/spritesheet.png') -57px -83px;
+    }
+  }
+}
+
+.nav__text {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $black;
+}

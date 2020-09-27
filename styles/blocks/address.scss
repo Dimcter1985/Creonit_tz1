@@ -1,0 +1,18 @@
+.address {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.address__link {
+  margin-bottom: 5px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.address__phones {
+  margin-bottom: 10px;
+}

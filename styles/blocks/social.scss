@@ -1,0 +1,66 @@
+.social__list {
+  display: flex;
+  padding-top: 3px;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: #e33861;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  &--vk:hover {
+    border-color: $white;
+    background: #4d7198;
+  }
+
+  &--facebook:hover {
+    border-color: $white;
+    background: #3b5998;
+  }
+
+  &--ok:hover {
+    border-color: $white;
+    background: #f2720c;
+  }
+
+  &--youtube:hover {
+    border-color: $white;
+    background: #FF011D;
+  }
+
+  &--vk::after {
+    content: '';
+    width: 24px;
+    height: 14px;
+    background: url('../images/icons/spritesheet.png') -24px -5px;
+  }
+
+  &--facebook::after {
+    content: '';
+    width: 9px;
+    height: 20px;
+    background: url('../images/icons/spritesheet.png') -5px -5px;
+  }
+
+  &--ok::after {
+    content: '';
+    width: 14px;
+    height: 24px;
+    background: url('../images/icons/spritesheet.png') -113px -46px;
+  }
+
+  &--youtube::after {
+    content: '';
+    width: 24px;
+    height: 29px;
+    background: url('../images/icons/spritesheet.png') -5px -127px;
+  }
+}

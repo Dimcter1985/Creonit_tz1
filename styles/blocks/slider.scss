@@ -1,0 +1,76 @@
+.slider__wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 1016px;
+  padding: 0px 19px;
+  margin-left: -19px;
+}
+
+.slider__item {
+  position: relative;
+  margin-right: 38px;
+}
+
+.slider__desc {
+  background: rgba(226,55,96,0.9);
+  position: absolute;
+  top: 91px;
+  left: -19px;
+  width: 396px;
+  height: 227px;
+  padding-top: 31px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 38px;
+
+  &:hover {
+
+    .sleder__desc-link h2 {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sleder__desc-link p {
+  @include intro($style:light);
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.sleder__desc-link h2 {
+  font-size: 34px;
+  line-height: 37px;
+  font-family: 'Intro Regular Alt', Arial, sans-serif;
+  margin-bottom: 13px;
+}
+
+.slider__nav {
+  display: flex;
+}
+
+.slider__prev {
+  display: block;
+  position: relative;
+  margin-right: 31px;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 26px;
+    background: url(../../images/icons/spritesheet.png) -100px -5px;
+  }
+}
+
+.slider__next {
+  display: block;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 26px;
+    background: url(../../images/icons/spritesheet.png) -106px -85px;
+  }
+}

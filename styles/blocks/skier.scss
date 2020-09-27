@@ -1,0 +1,20 @@
+.skier {
+  z-index: 10;
+  position: absolute;
+  width: 190px;
+  height: 139px;
+  bottom: 76px;
+  left: 2000px;
+  background: url('../images/skier.png');
+  animation-name: skier;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes skier {
+  to {
+    bottom: -76px;
+    left: -1500px;
+  }
+}

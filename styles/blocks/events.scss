@@ -1,0 +1,88 @@
+.events {
+  width: 100%;
+  background-image: url('../images/mountains.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.events__container {
+  padding-top: 36px;
+  position: relative;
+}
+
+.events__title {
+  color: $black;
+  text-align: center;
+  font-weight: 500;
+  font-size: 34px;
+  font-family: 'Intro Regular Alt', Arial, sans-serif;
+}
+
+.events__flags {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.events__flag {
+
+  &:nth-child(1) {
+    padding-top: 45px;
+    transform: translateX(-14px);
+  }
+
+  &:nth-child(2) {
+    padding-top: 25px;
+
+    .event__desc {
+      padding-top: 12px;
+      padding-left: 2px;
+    }
+    
+    .events__content span {
+      margin-top: -3px;
+    }
+  }
+}
+
+.events__content {
+  background-image: url('../images/flag.png');
+  width: 245px;
+  height: 289px;
+  position: relative;
+
+  &::after {
+    content: '';
+    z-index: 20;
+    position: absolute;
+    bottom: 0;
+    right: 7px;
+    width: 4px;
+    height: 180px;
+    background: #d0d0d0;
+  }
+}
+
+.events__content h2 {
+  display: block;
+  font-size: 30px;
+  @include intro($style:bold);
+  transform: skewY(-10deg);
+  padding-left: 9px;
+}
+
+.event__desc {
+  display: block;
+  transform: skewY(-10deg);
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 14px;
+  text-align: center;
+  padding-top: 29px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

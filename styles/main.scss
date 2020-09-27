@@ -1,0 +1,22 @@
+//colors
+$white: #ffffff;
+$black: #626161;
+
+//layout
+@import 'layout/mixins.scss';
+@import 'layout/fonts.scss';
+@import 'layout/base.scss';
+
+//blocks
+@import 'blocks/events.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/form.scss';
+@import 'blocks/header.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/social.scss';
+@import 'blocks/weight.scss';
+@import 'blocks/walkman.scss';
+@import 'blocks/skier.scss';
+@import 'blocks/address.scss';
+@import 'blocks/shedule.scss';
